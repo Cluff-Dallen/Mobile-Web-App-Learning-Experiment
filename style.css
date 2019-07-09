@@ -118,6 +118,7 @@ h2 {
     padding-top: 10px;
     padding-bottom: 10px;
     border-bottom: 2px solid #66C8CA;
+    overflow: hidden;
 }
 
 .Menu li {
@@ -131,6 +132,10 @@ h2 {
 .Menu a {
     text-decoration: none;
     color: #66C8CA;
+    float: left;
+    display: block;
+    text-align: center;
+    padding-left: 16px;
 }
 
 #whoHr {
