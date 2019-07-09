@@ -121,6 +121,10 @@ h2 {
     overflow: hidden;
 }
 
+.Menu a:hover {
+    background-color: #2C9596;
+}
+
 .Menu li {
     display: inline;
     list-style-type: none;
