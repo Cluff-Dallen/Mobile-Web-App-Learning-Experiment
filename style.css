@@ -1,0 +1,138 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+
+/* Headers */
+
+h1,
+h2,
+h3,
+h4 {
+    color: #000000;
+    text-align: center;
+}
+
+
+/* Body */
+
+body {
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+
+/* Button */
+
+button {
+    background-color: #40ACAD;
+    color: #DCE0D9;
+    font-size: 20px;
+    display: inline-block;
+}
+
+
+/* Image */
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+
+/*
+Darkests: #2C9596
+Middle:   #40ACAD
+Lightest: #66C8CA
+
+White:   #DCE0D9
+Grey:    #2E353C
+/* Classes */
+
+.Who img {
+    /*border-color: #2E353C;*/
+    /*border-color: #2C9596;*/
+    border-color: #66C8CA;
+    border-width: 4px;
+    border-style: solid;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+}
+
+.Who,
+.Who h1,
+.Who h3 {
+    background-color: #2E353C;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    color: #DCE0D9;
+    padding-top: 16px;
+}
+
+.Who {
+    border-bottom: solid #66C8CA 3px;
+}
+
+.MyInfo {
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.MyInfo {
+    font-family: Helvetica;
+}
+
+h2 {
+    color: #66C8CA;
+}
+
+
+/* Menu */
+
+.Menu {
+    background-color: #2E353C;
+    text-align: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #66C8CA;
+}
+
+.Menu li {
+    display: inline;
+    list-style-type: none;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 20px;
+}
+
+.Menu a {
+    text-decoration: none;
+    color: #66C8CA;
+}
+
+#whoHr {
+    border-color: #66C8CA;
+}
