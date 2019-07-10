@@ -6,45 +6,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Crypto Title</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script>
-        @media screen and(max - width: 600 px) {
-            .Menu a: not(: first - child) {
-                    display: none;
-                }
-                .Menu a.icon {
-                    float: right;
-                    display: block;
-                }
-        }
-
-        @media screen and(max - width: 600 px) {
-            .Menu.responsive {
-                    position: relative;
-                }
-                .Meny.responsive.icon {
-                    position: absolute;
-                    right: 0;
-                    top: 0;
-                }
-                .Menu.responsive a {
-                    float: none;
-                    display: block;
-                    text - align: left;
-                }
-        }
-    </script>
 </head>
 
 <body>
-    <div class="Menu" id="myTopnav">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#cryptoInfo">Crypto Info</a>
-        <a href="#tools">Tools</a>
-        <a href="#unknown">Unknown</a>
+    <div class="Menu" id="myMenu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="info.html">Crypto Info</a>
+        <a href="tools.html">Tools</a>
+        <a href="unknown.html">Unknown</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>
+        <span id="menuInfo">Crypto Infromational App</span>
     </div>
 
     <div class="Who">
@@ -93,7 +67,7 @@
     </div>
     <script>
         function myFunction() {
-            var x = document.getElementById("myTopnav");
+            var x = document.getElementById("myMenu");
             if (x.className === "Menu") {
                 x.className += " responsive";
             } else {
