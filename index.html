@@ -3,45 +3,48 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Crypto Title</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src='js.js'></script>
+
 </head>
 
 <body>
     <div class="Menu" id="myMenu">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="info.html">Crypto Info</a>
-        <a href="tools.html">Tools</a>
-        <a href="unknown.html">Unknown</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
+        <a id="home" href="index.html">Home</a>
+        <a id="about" href="about.html">About</a>
+        <a id="info" href="info.html">Crypto Info</a>
+        <a id="tools" href="tools.html">Tools</a>
+        <a id="unknown" href="unknown.html">Unknown</a>
+        <a href="javascript:void(0);" class="icon" onclick="openMenu()">
+            <img id="menuIcon" src="menu.png" alt="menu icon" width="20px" height="20px">
         </a>
-        <span id="menuInfo">Crypto Infromational App</span>
+        <span id="menuInfo">Mobile Web App</span>
     </div>
 
     <div class="Who">
-        <img src="bitcoinBlue.png" alt="Profile picture of Dallen R. Cluff">
+        <img id="bitcoin" src="bitcoinBlue.png" alt="Profile picture of Dallen R. Cluff">
         <h1>Crypto Web Application</h1>
         <hr id="whoHr" width="50%" ;>
-        <h3><i>Studying Software Engineering at Brigham Young University of Idaho</i></h3>
+        <h3><i>A mobile web app to meet all your crypto needs.</i></h3>
     </div>
 
-    <div class="MyInfo ">
-        <h2>Cryptooo</h2>
+    <div class="MyInfo">
+        <h2>What is Crypto?</h2>
         <p>Currently I'm a student finishing up my software engineering degree at BYU-I. I'm expected to graduate in less than a year. While I work towards graduation, I am currently searching for an intership. I'll be avalible to start as soon as my current
             semester ends in mid July.</p>
+
+        <iframe id="video" width="560" height="3105" src="https://www.youtube.com/embed/ktK6Yx3_czs" frameborder="0" allow="accelerometer;" allowfullscreen></iframe>
 
         <p>I'm excited to learn, improve, and grow my skills and knowledge as I begin my career as a young software engineer. I work well with others, and would consider myself a great commuicator and an excellent addition to any team. I can lead, and teach
             those around me or even follow when neccesary. </p>
 
-        <hr style="color: #FFFFFF; " width="50% ">
+        <hr width="50%">
 
         <h2>Skills and Knowledge</h2>
         <p>I'm fluent in C++, having used it throughout most of my education as I worked towards my degree. I'd also consider fluent and well rounded using html, css, and javascript. I'm comfortable and more than familiar with Linux, as that I've been using
             it for several years now. I'm also knowlegable of using Github, and even familiar with some use of git in the commandline. I have breifly worked with SQL, JSON, AJAX, and PHP althought I wouldn't consider myself fluent in them, more so just
-            a basic undertanding.</p>
+            a basic underpicture-in-picturetanding.</p>
 
         <ul>
             <li>C++</li>
@@ -59,14 +62,13 @@
         <br>
         <br>
 
-        <hr style="color: #FFFFFF; " width="50% ">
+        <hr width="50%">
 
         <h2>Projects</h2>
         <p>Below you will find some of my most recent projects: </p>
-        <img src="sampleproject.png " alt="An example of what might be here ">
     </div>
     <script>
-        function myFunction() {
+        function openMenu() {
             var x = document.getElementById("myMenu");
             if (x.className === "Menu") {
                 x.className += " responsive";

@@ -42,7 +42,7 @@ body {
 
 button {
     background-color: #40ACAD;
-    color: #DCE0D9;
+    color: black;
     font-size: 20px;
     display: inline-block;
 }
@@ -132,11 +132,6 @@ h2 {
     border-right: solid #66C8CA .01em;
 }
 
-.Menu a:hover {
-    background-color: #2C9596;
-    color: #DCE0D9;
-}
-
 .Menu span {
     color: #DCE0D9;
     font-size: 1.5em;
@@ -165,9 +160,6 @@ h2 {
 }
 
 @media screen and (max-width: 1100px) {
-    .Menu.responsive {
-        position: relative;
-    }
     .Meny.responsive .icon {
         position: absolute;
         right: 0;
@@ -177,5 +169,56 @@ h2 {
         float: none;
         display: block;
         text-align: left;
+        padding-left: 2em;
     }
+}
+
+#menuIcon {
+    width: 20px;
+    height: 20px;
+}
+
+#bitcoin:hover {
+    transform: rotate(360deg);
+    transition: all 1s;
+}
+
+#menuIcon:hover {
+    transform: scaleX(1.5) scaleY(1.1);
+    transition: all .1s;
+}
+
+#home:hover {
+    transform: scaleX(1.2) scaleY(1.2);
+    transition: all .1s;
+    background-color: #2C9596;
+}
+
+#about:hover {
+    transform: scaleX(1.2) scaleY(1.2);
+    transition: all .1s;
+    background-color: #2C9596;
+}
+
+#info:hover {
+    transform: scaleX(1.2) scaleY(1.2);
+    transition: all .1s;
+    background-color: #2C9596;
+}
+
+#tools:hover {
+    transform: scaleX(1.2) scaleY(1.2);
+    transition: all .1s;
+    background-color: #2C9596;
+}
+
+#unknown:hover {
+    transform: scaleX(1.2) scaleY(1.2);
+    transition: all .1s;
+    background-color: #2C9596;
+}
+
+#video {
+    width: 60%;
+    height: 20em;
 }
