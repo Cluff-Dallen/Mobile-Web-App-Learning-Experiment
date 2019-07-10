@@ -83,16 +83,14 @@ Grey:    #2E353C
 .Who h1,
 .Who h3 {
     background-color: #2E353C;
-    margin: auto;
     text-align: center;
-    padding-bottom: 6px;
-    padding-top: 6px;
     color: #DCE0D9;
-    padding-top: 16px;
 }
 
 .Who {
-    border-bottom: solid #66C8CA 3px;
+    border-bottom: solid #66C8CA 5px;
+    padding-top: 16px;
+    padding-bottom: 6px;
 }
 
 #whoHr {
@@ -102,6 +100,7 @@ Grey:    #2E353C
 .MyInfo {
     padding-left: 6px;
     padding-right: 6px;
+    background-color: #DCE0D9;
 }
 
 .MyInfo {
@@ -110,30 +109,35 @@ Grey:    #2E353C
 
 h2 {
     color: #66C8CA;
+    margin-top: 0;
+    padding-top: .8em;
+}
+
+p {
+    margin-bottom: 0;
+    padding-bottom: .8em;
 }
 
 
 /* Menu */
 
 .Menu {
-    background-color: #2E353C;
-    border-bottom: .2em solid #66C8CA;
+    background-color: #DCE0D9;
     overflow: hidden;
 }
 
 .Menu a {
     text-decoration: none;
-    color: #DCE0D9;
+    color: #2C9596;
     float: left;
     display: block;
     padding-left: 3%;
     padding-right: 3%;
     font-size: 1.7em;
-    border-right: solid #66C8CA .095em;
 }
 
 .Menu span {
-    color: #DCE0D9;
+    color: #2C9596;
     font-size: 1.5em;
     float: right;
     padding-right: 5%;
@@ -198,30 +202,35 @@ h2 {
     transform: scaleX(1.2) scaleY(1.2);
     transition: all .1s;
     background-color: #2C9596;
+    color: #DCE0D9;
 }
 
 #about:hover {
     transform: scaleX(1.2) scaleY(1.2);
     transition: all .1s;
     background-color: #2C9596;
+    color: #DCE0D9;
 }
 
 #info:hover {
     transform: scaleX(1.2) scaleY(1.2);
     transition: all .1s;
     background-color: #2C9596;
+    color: #DCE0D9;
 }
 
 #tools:hover {
     transform: scaleX(1.2) scaleY(1.2);
     transition: all .1s;
     background-color: #2C9596;
+    color: #DCE0D9;
 }
 
 #unknown:hover {
     transform: scaleX(1.2) scaleY(1.2);
     transition: all .1s;
     background-color: #2C9596;
+    color: #DCE0D9;
 }
 
 #video {
