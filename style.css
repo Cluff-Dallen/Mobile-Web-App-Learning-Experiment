@@ -129,7 +129,7 @@ h2 {
     padding-left: 3%;
     padding-right: 3%;
     font-size: 1.7em;
-    border-right: solid #66C8CA .01em;
+    border-right: solid #66C8CA .095em;
 }
 
 .Menu span {
@@ -171,7 +171,7 @@ h2 {
         text-align: left;
     }
     .links a {
-        border-left: .1em solid #2C9596;
+        border-left: .1em solid #66C8CA;
         margin-left: 2em;
     }
     .links a:not(:first-child) {
