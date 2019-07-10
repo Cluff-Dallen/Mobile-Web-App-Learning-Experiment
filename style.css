@@ -213,7 +213,7 @@ p {
     color: #DCE0D9;
 }
 
-#info:hover {
+#prices:hover {
     transform: scaleX(1.2) scaleY(1.2);
     transition: all .1s;
     background-color: #2C9596;
@@ -237,35 +237,4 @@ p {
 #video {
     width: 60%;
     height: 20em;
-}
-
-
-/* Crypto Prices Page */
-
-#pricesHeading {
-    background: #2E353C;
-    color: #DCE0D9;
-}
-
-.logo {
-    width: 1.5em;
-    height: 1.5em;
-}
-
-#priceTable {
-    margin: 0px auto;
-    border: solid #2E353C 1.5px;
-}
-
-.priceTableText {
-    padding-top: 0px;
-    margin-top: 0px;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-}
-
-th {
-    color: #66C8CA;
-    font-family: 'Arial Bold', sans-serif;
-    background-color: #2E353C;
 }
