@@ -82,7 +82,7 @@
         </tr>
     </table>
 
-    <p>Refreshing the page will increase the number of times you've checked prices.</p>
+    <p>Refreshing the page will increase the number of times you've checked these prices.</p>
 
     <script>
         if (localStorage.visits) {
@@ -90,7 +90,8 @@
         } else {
             localStorage.visits = 1;
         }
-        document.write("You've checked prices this many times:" + localStorage.visits);
+
+        document.write("You've checked these prices this many times:" + localStorage.visits);
 
         function openMenu() {
             var x = document.getElementById("myMenu");
