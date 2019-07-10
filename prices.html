@@ -81,24 +81,16 @@
             <td id="xrpChange">Change</td>
         </tr>
     </table>
-
-
-
-
-    <script type="text/javascript">
-        if (localStorage.hits) {
-            localStorage.hits = Number(localStorage.hits) + 1;
-        } else {
-            localStorage.hits = 1;
-        }
-        document.write("Total Hits :" + localStorage.hits);
-    </script>
-
-    <p>Refresh the page to increase number of hits.</p>
-    <p>Close the window and open it again and check the result.</p>
-
+    <p>Refreshing the page will increase the number of times you've checked prices.</p>
 
     <script>
+        if (localStorage.visits) {
+            localStorage.visits = Number(localStorage.visits) + 1;
+        } else {
+            localStorage.visits = 1;
+        }
+        document.write("You've checked prices this many times:" + localStorage.visits);
+
         function openMenu() {
             var x = document.getElementById("myMenu");
             if (x.className === "Menu") {
@@ -110,4 +102,4 @@
     </script>
 </body>
 
-</html>
+</html>\
