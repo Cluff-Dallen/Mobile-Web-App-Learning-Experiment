@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Crypto Prices</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src='coins.js'></script>
+</head>
+
+<body>
+    <div class="Menu" id="myMenu">
+        <div class="links"><a id="home" href="index.html">Home</a>
+            <a id="about" href="about.html">About</a>
+            <a id="info" href="prices.html">Crypto Prices</a>
+            <a id="tools" href="tools.html">Tools</a>
+            <a id="unknown" href="unknown.html">Unknown</a></div>
+        <a href="javascript:void(0);" class="icon" onclick="openMenu()">
+            <img id="menuIcon" src="menu.png" alt="menu icon" width="20px" height="20px">
+        </a>
+        <span id="menuInfo">Mobile Web App</span>
+    </div>
+
+    <div id="pricesHeading">
+        <h2 class="priceTableText">Crypto Prices</h2>
+        <p class="priceTableText">
+            <p>Below is a list of popular Cryptocurrencies along with their current price, volume, change in price, and their related ticker. All information is accessed througha web API. </p>
+
+        </p>
+    </div>
+
+    <br>
+    <table id="priceTable" width="100%" cellspacing="0" cellpadding="0">
+        <tr>
+            <th>Logo</th>
+            <th>Name</th>
+            <th>Ticker</th>
+            <th>Price</th>
+            <th>Market Cap</th>
+            <th>Volume</th>
+            <th>Change</th>
+        </tr>
+
+        <tr>
+            <td><img class="logo" src="bitcoin.png" alt="bitcoin logo"></td>
+            <td>Bitcoin</td>
+            <td id="bitcoinTicker">Ticker</td>
+            <td id="bitcoinPrice">Price</td>
+            <td id="bitcoinMarketCap">Market Cap</td>
+            <td id="bitcoinVolume">Volume</td>
+            <td id="bitcoinChange">Change</td>
+        </tr>
+        <tr>
+            <td><img class="logo" src="chainlink.jpeg" alt="chainlink logo"></td>
+            <td>ChainLink</td>
+            <td id="chainlinkTicker">Ticker</td>
+            <td id="chainlinkPrice">Price</td>
+            <td id="chainlinkMarketCap">Market Cap</td>
+            <td id="chainlinkVolume">Volume</td>
+            <td id="chainlinkChange">Change</td>
+        </tr>
+
+        <tr>
+            <td><img class="logo" src="bnb.png" alt="binance coin logo"></td>
+            <td>Binance Coin</td>
+            <td id="binanceCoinTicker">Ticker</td>
+            <td id="binanceCoinPrice">Price</td>
+            <td id="binanceCoinMarketCap">Market Cap</td>
+            <td id="binanceCoinVolume">Volume</td>
+            <td id="binanceCoinChange">Change</td>
+        </tr>
+
+        <tr>
+            <td><img class="logo" src="xrp.png" alt="xrp logo"></td>
+            <td>XRP</td>
+            <td id="xrpTicker">Ticker</td>
+            <td id="xrpPrice">Price</td>
+            <td id="xrpMarketCap">Market Cap</td>
+            <td id="xrpVolume">Volume</td>
+            <td id="xrpChange">Change</td>
+        </tr>
+    </table>
+
+
+
+
+    <script type="text/javascript">
+        if (localStorage.hits) {
+            localStorage.hits = Number(localStorage.hits) + 1;
+        } else {
+            localStorage.hits = 1;
+        }
+        document.write("Total Hits :" + localStorage.hits);
+    </script>
+
+    <p>Refresh the page to increase number of hits.</p>
+    <p>Close the window and open it again and check the result.</p>
+
+
+    <script>
+        function openMenu() {
+            var x = document.getElementById("myMenu");
+            if (x.className === "Menu") {
+                x.className += " responsive";
+            } else {
+                x.className = "Menu";
+            }
+        }
+    </script>
+</body>
+
+</html>
