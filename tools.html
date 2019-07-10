@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Crypto Title</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src='js.js'></script>
+
+</head>
+
+<body>
+    <div class="Menu" id="myMenu">
+        <div class="links"><a id="home" href="index.html">Home</a>
+            <a id="about" href="about.html">About</a>
+            <a id="info" href="info.html">Crypto Info</a>
+            <a id="tools" href="tools.html">Tools</a>
+            <a id="unknown" href="unknown.html">Unknown</a></div>
+        <a href="javascript:void(0);" class="icon" onclick="openMenu()">
+            <img id="menuIcon" src="menu.png" alt="menu icon" width="20px" height="20px">
+        </a>
+        <span id="menuInfo">Mobile Web App</span>
+    </div>
+
+
+
+    <script>
+        function openMenu() {
+            var x = document.getElementById("myMenu");
+            if (x.className === "Menu") {
+                x.className += " responsive";
+            } else {
+                x.className = "Menu";
+            }
+        }
+    </script>
+</body>
+
+</html>
+
+
+</html>

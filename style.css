@@ -2,6 +2,7 @@ html,
 body {
     margin: 0;
     padding: 0;
+    background-color: #DCE0D9
 }
 
 li {
@@ -141,6 +142,7 @@ p {
     font-size: 1.5em;
     float: right;
     padding-right: 5%;
+    display: inline;
 }
 
 
