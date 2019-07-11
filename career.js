@@ -20,10 +20,11 @@ function f1() {
     var applicationForm = {
         'firstname': application.firstname,
         'lastname': application.lastname,
-        'age': '21',
-        'byear': '1997',
-        'degree': 'Software Engineering',
-        'aboutyourself': 'Stuff about me'
+        'age': application.age,
+        'byear': application.byear,
+        'degree': application.degree,
+        'position': application.position,
+        'aboutyourself': application.aboutyourself
     };
 
     sessionStorage.setItem('applicationForm', JSON.stringify(applicationForm));
@@ -31,5 +32,6 @@ function f1() {
     var retrievedData = sessionStorage.getItem('applicationForm');
 
     var applicationInfo = JSON.parse(retrievedData)
-    document.getElementById('local').innerHTML = "hello: " + applicationInfo.firstname;
+    document.getElementById('local').innerHTML = "You previously submitted the following information on your application: <br> First Name: " + applicationInfo.firstname +
+        "<br>Last Name: " + applicationInfo.lastname + "<br>Your Age: " + applicationInfo.age + "<br>Your Birth Year: " + applicationInfo.byear + "<br>Your degree: " + applicationInfo.degree + "<br>Your position applied for: " + applicationInfo.position + "<br>About yourself: " + applicationInfo.aboutyourself;
 }
