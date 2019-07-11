@@ -27,11 +27,17 @@ function f1() {
         'aboutyourself': application.aboutyourself
     };
 
-    localStorage.setItem('applicationForm', JSON.stringify(applicationForm));
+    if (application.firstname != "") {
+        localStorage.setItem('applicationForm', JSON.stringify(applicationForm));
 
-    var retrievedData = localStorage.getItem('applicationForm');
+        var retrievedData = localStorage.getItem('applicationForm');
 
-    var applicationInfo = JSON.parse(retrievedData)
-    document.getElementById('local').innerHTML = "You previously submitted the following information on your application: <br> First Name: " + applicationInfo.firstname +
-        "<br>Last Name: " + applicationInfo.lastname + "<br>Your Age: " + applicationInfo.age + "<br>Your Birth Year: " + applicationInfo.byear + "<br>Your degree: " + applicationInfo.degree + "<br>Your position applied for: " + applicationInfo.position + "<br>About yourself: " + applicationInfo.aboutyourself;
+        var applicationInfo = JSON.parse(retrievedData)
+
+        document.getElementById('local').innerHTML = "You previously submitted the following information on your application: <br> First Name: " + applicationInfo.firstname +
+            "<br>Last Name: " + applicationInfo.lastname + "<br>Your Age: " + applicationInfo.age + "<br>Your Birth Year: " + applicationInfo.byear + "<br>Your degree: " + applicationInfo.degree + "<br>Your position applied for: " + applicationInfo.position + "<br>About yourself: " + applicationInfo.aboutyourself;
+    } else {
+        document.getElementById('local').innerHTML = "You previously submitted the following information on your application: <br> First Name: " + applicationInfo.firstname +
+            "<br>Last Name: " + applicationInfo.lastname + "<br>Your Age: " + applicationInfo.age + "<br>Your Birth Year: " + applicationInfo.byear + "<br>Your degree: " + applicationInfo.degree + "<br>Your position applied for: " + applicationInfo.position + "<br>About yourself: " + applicationInfo.aboutyourself;
+    }
 }
