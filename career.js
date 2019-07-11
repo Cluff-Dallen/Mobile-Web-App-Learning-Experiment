@@ -18,8 +18,8 @@ function f1() {
         "<br> About yourself: " + application.aboutyourself;
 
     var applicationForm = {
-        'firstname': 'Dallen',
-        'lastname': 'Cluff',
+        'firstname': application.firstname,
+        'lastname': application.lastname,
         'age': '21',
         'byear': '1997',
         'degree': 'Software Engineering',
