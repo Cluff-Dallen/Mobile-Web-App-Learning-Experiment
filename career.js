@@ -9,13 +9,13 @@ function f1() {
         aboutyourself: String(document.getElementById("aboutyourself").value)
     };
 
-    document.getElementById("submittedText").innerHTML = "Your First Name: " + application.firstname +
+    /*document.getElementById("submittedText").innerHTML = "Your First Name: " + application.firstname +
         "<br> Your Last Name: " + application.lastname +
         "<br> Your Age: " + application.age +
         "<br> Your Birth Year: " + application.byear +
         "<br> Your Degree is in: " + application.degree +
         "<br> Applying for the position of: " + application.position +
-        "<br> About yourself: " + application.aboutyourself;
+        "<br> About yourself: " + application.aboutyourself;*/
 
     var applicationForm = {
         'firstname': application.firstname,
@@ -27,9 +27,9 @@ function f1() {
         'aboutyourself': application.aboutyourself
     };
 
-    sessionStorage.setItem('applicationForm', JSON.stringify(applicationForm));
+    localStorage.setItem('applicationForm', JSON.stringify(applicationForm));
 
-    var retrievedData = sessionStorage.getItem('applicationForm');
+    var retrievedData = localStorage.getItem('applicationForm');
 
     var applicationInfo = JSON.parse(retrievedData)
     document.getElementById('local').innerHTML = "You previously submitted the following information on your application: <br> First Name: " + applicationInfo.firstname +
