@@ -17,7 +17,7 @@ function f1() {
         "<br> Applying for the position of: " + application.position +
         "<br> About yourself: " + application.aboutyourself;*/
 
-    var applicationForm = {
+    /*var applicationForm = {
         'firstname': application.firstname,
         'lastname': application.lastname,
         'age': application.age,
@@ -25,32 +25,46 @@ function f1() {
         'degree': application.degree,
         'position': application.position,
         'aboutyourself': application.aboutyourself
-    };
+    };*/
 
-    /*
-    localStorage.setItem('firstname', application.firstname);
-    localStorage.setItem('lastname', application.lastname);
-    localStorage.setItem('age', application.age);
-    localStorage.setItem('byear', application.byear);
-    localStorage.setItem('degree', application.degree);
-    localStorage.setItem('position', application.position);
-    localStorage.setItem('aboutyourself', application.aboutyourself);*/
+
+    /* localStorage.setItem('firstname', application.firstname);
+     localStorage.setItem('lastname', application.lastname);
+     localStorage.setItem('age', application.age);
+     localStorage.setItem('byear', application.byear);
+     localStorage.setItem('degree', application.degree);
+     localStorage.setItem('position', application.position);
+     localStorage.setItem('aboutyourself', application.aboutyourself);*/
 
 
 
 
 
     if (application.firstname != "") {
-        localStorage.setItem('applicationForm', JSON.stringify(applicationForm));
+        /*
+         localStorage.setItem('applicationForm', JSON.stringify(applicationForm));
 
-        var retrievedData = localStorage.getItem('applicationForm');
+         var retrievedData = localStorage.getItem('applicationForm');
 
-        var applicationInfo = JSON.parse(retrievedData)
+         var applicationInfo = JSON.parse(retrievedData)*/
 
-        document.getElementById('local').innerHTML = "You previously submitted the following information on your application: <br> First Name: " + applicationInfo.firstname +
-            "<br>Last Name: " + applicationInfo.lastname + "<br>Your Age: " + applicationInfo.age + "<br>Your Birth Year: " + applicationInfo.byear + "<br>Your degree: " + applicationInfo.degree + "<br>Your position applied for: " + applicationInfo.position + "<br>About yourself: " + applicationInfo.aboutyourself;
+        localStorage.setItem('firstname', application.firstname);
+        localStorage.setItem('lastname', application.lastname);
+        localStorage.setItem('age', application.age);
+        localStorage.setItem('byear', application.byear);
+        localStorage.setItem('degree', application.degree);
+        localStorage.setItem('position', application.position);
+        localStorage.setItem('aboutyourself', application.aboutyourself);
+
+        document.getElementById('local').innerHTML = "You previously submitted the following information on your application: <br> First Name: " + localStorage.getItem('firstname') +
+            "<br>Last Name: " + localStorage.getItem('lastname') + "<br>Your Age: " + localStorage.getItem('age') + "<br>Your Birth Year: " + localStorage.getItem('byear') + "<br>Your degree: " + localStorage.getItem('degree') + "<br>Your position applied for: " + localStorage.getItem('position') + "<br>About yourself: " + localStorage.getItem('aboutyourself');
+
     } else {
-        document.getElementById('local').innerHTML = "You previously submitted the following information on your application: <br> First Name: " + applicationInfo.firstname +
-            "<br>Last Name: " + applicationInfo.lastname + "<br>Your Age: " + applicationInfo.age + "<br>Your Birth Year: " + applicationInfo.byear + "<br>Your degree: " + applicationInfo.degree + "<br>Your position applied for: " + applicationInfo.position + "<br>About yourself: " + applicationInfo.aboutyourself;
+
+        document.getElementById('local').innerHTML = "You previously submitted the following information on your application: <br> First Name: " + localStorage.getItem('firstname') +
+            "<br>Last Name: " + localStorage.getItem('lastname') + "<br>Your Age: " + localStorage.getItem('age') + "<br>Your Birth Year: " + localStorage.getItem('byear') + "<br>Your degree: " + localStorage.getItem('degree') + "<br>Your position applied for: " + localStorage.getItem('position') + "<br>About yourself: " + localStorage.getItem('aboutyourself');
+
+        /*document.getElementById('local').innerHTML = "You previously submitted the following information on your application: <br> First Name: " + applicationInfo.firstname +
+            "<br>Last Name: " + applicationInfo.lastname + "<br>Your Age: " + applicationInfo.age + "<br>Your Birth Year: " + applicationInfo.byear + "<br>Your degree: " + applicationInfo.degree + "<br>Your position applied for: " + applicationInfo.position + "<br>About yourself: " + applicationInfo.aboutyourself;*/
     }
 }
