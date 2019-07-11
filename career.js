@@ -27,6 +27,19 @@ function f1() {
         'aboutyourself': application.aboutyourself
     };
 
+    /*
+    localStorage.setItem('firstname', application.firstname);
+    localStorage.setItem('lastname', application.lastname);
+    localStorage.setItem('age', application.age);
+    localStorage.setItem('byear', application.byear);
+    localStorage.setItem('degree', application.degree);
+    localStorage.setItem('position', application.position);
+    localStorage.setItem('aboutyourself', application.aboutyourself);*/
+
+
+
+
+
     if (application.firstname != "") {
         localStorage.setItem('applicationForm', JSON.stringify(applicationForm));
 
