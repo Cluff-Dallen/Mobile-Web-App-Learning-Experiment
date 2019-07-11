@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Join Us</title>
+    <link rel="stylesheet" type="text/css" href="career.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src='career.js'></script>
+</head>
+
+<body>
+    <div class="Menu" id="myMenu">
+        <div class="links"><a id="home" href="index.html">Home</a>
+            <a id="career" href="career.html">Join Us</a>
+            <a id="prices" href="prices.html">Crypto Prices</a>
+            <a id="tools" href="tools.html">Tools</a>
+            <a id="unknown" href="unknown.html">Unknown</a></div>
+        <a href="javascript:void(0);" class="icon" onclick="openMenu()">
+            <img id="menuIcon" src="menu.png" alt="menu icon" width="20px" height="20px">
+        </a>
+        <span id="menuInfo">Mobile Web App</span>
+    </div>
+
+    <div id="careerHeading">
+        <h2 class="careerText">Join Our Development Team</h2>
+        <p class="careerText">
+            <p>Our Company is always looking to expand and take on new team members. Lucky for you, you can apply right here form your mobile device. Just enter in the information below for it to be sent to our team. Thanks and look forward to hearing from
+                you!
+            </p>
+        </p>
+    </div>
+
+    <h2>Submit an application</h2>
+    <hr>
+    <div id="apply">
+        <form id="careerForm">
+            <br>
+            <label for="firstname">Firstname: </label> <input id="firstname" name="firstname" type="text"> <label for="lastname">Lastname: </label><input id="lastname" name="lastname" type="text"><br>
+            <br>
+            <label for="age">Age: </label> <input id="age" name="age" type="number"> <label for="byear">Birth Year: </label> <input id="byear" name="byear" type="number">
+            <br><br>
+
+            <label for="degree">Degree: </label> <input id="degree" name="degree" type="text"> <label for="position">Position: </label> <input id="position" name="position" type="text"><br><br>
+            <label for="aboutyourself">Tell us about yourself: </label><br> <textarea name="aboutyourself" id="aboutyourself" cols="30" rows="10"></textarea>
+        </form>
+
+        <button onclick="f1()">Submit</button>
+    </div>
+    <br>
+    <hr>
+
+    <div id="submittedApplication">
+        <h2>Submitted Application: </h2>
+        <div id="submittedText"></div>
+        <div id="local">!!!</div>
+
+
+    </div>
+
+
+
+    <script>
+        function openMenu() {
+            var x = document.getElementById("myMenu");
+            if (x.className === "Menu") {
+                x.className += " responsive";
+            } else {
+                x.className = "Menu";
+            }
+        }
+    </script>
+</body>
+
+</html>

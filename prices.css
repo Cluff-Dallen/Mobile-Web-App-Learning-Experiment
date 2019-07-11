@@ -14,6 +14,7 @@
 #priceTable {
     margin: 0px auto;
     border: solid #2E353C 1.5px;
+    width: 100%;
 }
 
 .priceTableText {

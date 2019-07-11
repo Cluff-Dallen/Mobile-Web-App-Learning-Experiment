@@ -206,7 +206,7 @@ p {
     color: #DCE0D9;
 }
 
-#about:hover {
+#career:hover {
     transform: scaleX(1.2) scaleY(1.2);
     transition: all .1s;
     background-color: #2C9596;

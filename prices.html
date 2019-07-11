@@ -37,7 +37,6 @@
             <th>Name</th>
             <th>Ticker</th>
             <th>Price</th>
-            <th>Market Cap</th>
             <th>Volume</th>
             <th>Change</th>
         </tr>
@@ -47,7 +46,6 @@
             <td>Bitcoin</td>
             <td id="bitcoinTicker">Ticker</td>
             <td id="bitcoinPrice">Price</td>
-            <td id="bitcoinMarketCap">Market Cap</td>
             <td id="bitcoinVolume">Volume</td>
             <td id="bitcoinChange">Change</td>
         </tr>
@@ -56,7 +54,6 @@
             <td>ChainLink</td>
             <td id="chainlinkTicker">Ticker</td>
             <td id="chainlinkPrice">Price</td>
-            <td id="chainlinkMarketCap">Market Cap</td>
             <td id="chainlinkVolume">Volume</td>
             <td id="chainlinkChange">Change</td>
         </tr>
@@ -66,7 +63,6 @@
             <td>Binance Coin</td>
             <td id="binanceCoinTicker">Ticker</td>
             <td id="binanceCoinPrice">Price</td>
-            <td id="binanceCoinMarketCap">Market Cap</td>
             <td id="binanceCoinVolume">Volume</td>
             <td id="binanceCoinChange">Change</td>
         </tr>
@@ -76,7 +72,6 @@
             <td>XRP</td>
             <td id="xrpTicker">Ticker</td>
             <td id="xrpPrice">Price</td>
-            <td id="xrpMarketCap">Market Cap</td>
             <td id="xrpVolume">Volume</td>
             <td id="xrpChange">Change</td>
         </tr>
@@ -91,7 +86,7 @@
             localStorage.visits = 1;
         }
 
-        document.write("You've checked these prices this many times:" + localStorage.visits);
+        document.write("You've checked these prices this many times: " + localStorage.visits);
 
         function openMenu() {
             var x = document.getElementById("myMenu");

@@ -1,0 +1,28 @@
+/* Join Us Page  */
+
+#careerHeading {
+    background: #2E353C;
+    color: #DCE0D9;
+    width: 100%;
+}
+
+.logo {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.careerText {
+    padding-top: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+#apply {
+    margin: 0px;
+    padding: 0px;
+    display: list-item;
+    width: 100%;
+}
+
+#aboutyourself {}
