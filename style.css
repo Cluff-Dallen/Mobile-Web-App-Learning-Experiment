@@ -220,7 +220,7 @@ p {
     color: #DCE0D9;
 }
 
-#tools:hover {
+#suggestions:hover {
     transform: scaleX(1.2) scaleY(1.2);
     transition: all .1s;
     background-color: #2C9596;
@@ -237,4 +237,27 @@ p {
 #video {
     width: 60%;
     height: 20em;
+}
+
+#animationOne {
+    font-size: 35px;
+    animation-name: animationOne;
+    animation-duration: 1s;
+    animation-iteration-count: 100;
+    background-color: #2E353C;
+}
+
+@keyframes animationOne {
+    0% {
+        color: red;
+    }
+    33% {
+        color: orange;
+    }
+    66% {
+        color: red;
+    }
+    100% {
+        color: orange;
+    }
 }

@@ -1,0 +1,40 @@
+/* Suggestions Page  */
+
+#suggestionsHeading {
+    background: #2E353C;
+    color: #DCE0D9;
+    width: 100%;
+}
+
+.logo {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.suggestionsrText {
+    padding-top: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+ul {
+    font-size: 14px;
+    margin: auto;
+    padding: 0px;
+    text-align: left;
+}
+
+li {
+    list-style-type: disc;
+    font-size: 14px;
+    margin: auto;
+    padding: 0px;
+    text-align: left;
+}
+
+#suggestionsList {
+    padding: 0px;
+    margin: auto;
+    width: 50%;
+}

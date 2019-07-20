@@ -14,7 +14,7 @@
         <div class="links"><a id="home" href="index.html">Home</a>
             <a id="career" href="career.html">Join Us</a>
             <a id="prices" href="prices.html">Crypto Prices</a>
-            <a id="tools" href="tools.html">Tools</a>
+            <a id="suggestions" href="suggestions.html">Help Us Improve</a>
             <a id="unknown" href="unknown.html">Unknown</a></div>
         <a href="javascript:void(0);" class="icon" onclick="openMenu()">
             <img id="menuIcon" src="menu.png" alt="menu icon" width="20px" height="20px">
@@ -23,6 +23,7 @@
     </div>
 
     <div id="careerHeading">
+        <br>
         <h2 class="careerText">Join Our Development Team</h2>
         <p class="careerText">
             <p>Our Company is always looking to expand and take on new team members. Lucky for you, you can apply right here form your mobile device. Just enter in the information below for it to be sent to our team. Thanks and look forward to hearing from
@@ -36,16 +37,17 @@
     <div id="apply">
         <form id="careerForm">
             <br>
-            <label for="firstname">Firstname: </label> <input id="firstname" name="firstname" type="text"> <label for="lastname">Lastname: </label><input id="lastname" name="lastname" type="text"><br>
+            <label for="firstname">Firstname: </label> <input onmouseover="f3()" id="firstname" name="firstname" type="text"> <label for="lastname">Lastname: </label><input id="lastname" name="lastname" onmouseover="f4()" type="text"><br>
             <br>
-            <label for="age">Age: </label> <input id="age" name="age" type="number"> <label for="byear">Birth Year: </label> <input id="byear" name="byear" type="number">
+            <label for="age">Age: </label> <input id="age" onmouseover="f5()" name="age" type="number"> <label for="byear">Birth Year: </label> <input onmouseover="f6()" id="byear" name="byear" type="number">
             <br><br>
 
-            <label for="degree">Degree: </label> <input id="degree" name="degree" type="text"> <label for="position">Position: </label> <input id="position" name="position" type="text"><br><br>
-            <label for="aboutyourself">Tell us about yourself: </label><br> <textarea name="aboutyourself" id="aboutyourself" cols="30" rows="10"></textarea>
+            <label for="degree">Degree: </label> <input onmouseover="f7()" id="degree" name="degree" type="text"> <label for="position">Position: </label> <input onmouseover="f8()" id="position" name="position" type="text"><br><br>
+            <label for="aboutyourself">Tell us about yourself: </label><br> <textarea onmouseover="f9()" name="aboutyourself" id="aboutyourself" cols="30" rows="10"></textarea>
         </form>
-
-        <button onclick="f1()">Submit</button>
+        <div onmouseover="f2()">
+            <button id="submit" onclick="f1()">Submit</button>
+        </div>
     </div>
     <br>
     <hr>
@@ -53,7 +55,7 @@
     <div id="submittedApplication">
         <h2>Submitted Application: </h2>
         <div id="submittedText"></div>
-        <div id="local">You have not yet sumbitted an application on this mobile device. Once you've submitted an application, your information should show here due to your information being stored into an object, and than stored into local storage.KreeKree!KreeKREE!</div>
+        <div id="local">You have not yet sumbitted an application on this mobile device. Once you've submitted an application, your information should show here due to your information being stored into an object, and than stored into local storage.</div>
 
     </div>
 

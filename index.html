@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Crypto Mobile Web App</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src='homePage.js'></script>
+
 </head>
 
 <body>
@@ -12,7 +14,7 @@
         <div class="links"><a id="home" href="index.html">Home</a>
             <a id="career" href="career.html">Join Us</a>
             <a id="prices" href="prices.html">Crypto Prices</a>
-            <a id="tools" href="tools.html">Tools</a>
+            <a id="suggestions" href="suggestions.html">Help Us Improve</a>
             <a id="unknown" href="unknown.html">Unknown</a></div>
         <a href="javascript:void(0);" class="icon" onclick="openMenu()">
             <img id="menuIcon" src="menu.png" alt="menu icon" width="20px" height="20px">
@@ -44,6 +46,10 @@
         <p>I'm excited to learn, improve, and grow my skills and knowledge as I begin my career as a young software engineer. I work well with others, and would consider myself a great commuicator and an excellent addition to any team. I can lead, and teach
             those around me or even follow when neccesary. </p>
     </div>
+    <div id="animationOne">Our researchers suggest that now is a good time to buy bitcoin!</div>
+    <br>
+    <button onclick="f1()">Turn Off Animation</button><button onclick="f2()">Turn Back On</button> <br>
+    <br>
     <script>
         function openMenu() {
             var x = document.getElementById("myMenu");

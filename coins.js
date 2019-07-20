@@ -53,3 +53,19 @@ requestXrp.onload = function() {
     document.getElementById('xrpVolume').innerHTML = xrp.ticker.volume;
     document.getElementById('xrpChange').innerHTML = xrp.ticker.change;
 }
+
+function f1() {
+    if (document.getElementById('Bitcoin').style != 'green') { document.getElementById('Bitcoin').style = "color: green"; }
+}
+
+function f2() {
+    document.getElementById('ChainLink').style = "color: green";
+}
+
+function f3() {
+    document.getElementById('BinanceCoin').style = "color: green";
+}
+
+function f4() {
+    document.getElementById('Xrp').style = "color: green";
+}

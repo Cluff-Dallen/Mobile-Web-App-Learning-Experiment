@@ -25,4 +25,16 @@
     width: 100%;
 }
 
-#aboutyourself {}
+#submit {
+    transition: background 5s;
+}
+
+#lastname,
+#firstname,
+#age,
+#byear,
+#degree,
+#position,
+#aboutyourself {
+    transition: background 3s;
+}

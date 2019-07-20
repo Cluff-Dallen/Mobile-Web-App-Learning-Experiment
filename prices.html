@@ -12,9 +12,9 @@
 <body>
     <div class="Menu" id="myMenu">
         <div class="links"><a id="home" href="index.html">Home</a>
-            <a id="about" href="about.html">About</a>
+            <a id="career" href="career.html">Join Us</a>
             <a id="prices" href="prices.html">Crypto Prices</a>
-            <a id="tools" href="tools.html">Tools</a>
+            <a id="suggestions" href="suggestions.html">Help Us Improve</a>
             <a id="unknown" href="unknown.html">Unknown</a></div>
         <a href="javascript:void(0);" class="icon" onclick="openMenu()">
             <img id="menuIcon" src="menu.png" alt="menu icon" width="20px" height="20px">
@@ -23,13 +23,15 @@
     </div>
 
     <div id="pricesHeading">
+        <br>
         <h2 class="priceTableText">Crypto Prices</h2>
         <p class="priceTableText">
             <p>Below is a list of popular Cryptocurrencies along with their current price, volume, change in price, and their related ticker. All information is accessed througha web API. </p>
 
         </p>
     </div>
-
+    <br>
+    <p>To "Favorite" a coin, click the name to change the CSS using javascript. This will change the color of the name, making it easier to remember which coin you are paying attention too.</p>
     <br>
     <table id="priceTable" width="100%" cellspacing="0" cellpadding="0">
         <tr>
@@ -43,7 +45,7 @@
 
         <tr>
             <td><img class="logo" src="bitcoin.png" alt="bitcoin logo"></td>
-            <td>Bitcoin</td>
+            <td onclick="f1()" id="Bitcoin">Bitcoin</td>
             <td id="bitcoinTicker">Ticker</td>
             <td id="bitcoinPrice">Price</td>
             <td id="bitcoinVolume">Volume</td>
@@ -51,7 +53,7 @@
         </tr>
         <tr>
             <td><img class="logo" src="chainlink.jpeg" alt="chainlink logo"></td>
-            <td>ChainLink</td>
+            <td onclick="f2()" id="ChainLink">ChainLink</td>
             <td id="chainlinkTicker">Ticker</td>
             <td id="chainlinkPrice">Price</td>
             <td id="chainlinkVolume">Volume</td>
@@ -60,7 +62,7 @@
 
         <tr>
             <td><img class="logo" src="bnb.png" alt="binance coin logo"></td>
-            <td>Binance Coin</td>
+            <td onclick="f3()" id="BinanceCoin">Binance Coin</td>
             <td id="binanceCoinTicker">Ticker</td>
             <td id="binanceCoinPrice">Price</td>
             <td id="binanceCoinVolume">Volume</td>
@@ -69,7 +71,7 @@
 
         <tr>
             <td><img class="logo" src="xrp.png" alt="xrp logo"></td>
-            <td>XRP</td>
+            <td onclick="f4()" id="Xrp">XRP</td>
             <td id="xrpTicker">Ticker</td>
             <td id="xrpPrice">Price</td>
             <td id="xrpVolume">Volume</td>
