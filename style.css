@@ -65,7 +65,7 @@ White:   #DCE0D9
 Grey:    #2E353C
 /* Classes */
 
-.Who img {
+.HomeHeading img {
     /*border-color: #2E353C;*/
     /*border-color: #2C9596;*/
     border-color: #66C8CA;
@@ -79,15 +79,15 @@ Grey:    #2E353C
     height: 200px;
 }
 
-.Who,
-.Who h1,
-.Who h3 {
+.HomeHeading,
+.HomeHeading h1,
+.HomeHeading h3 {
     background-color: #2E353C;
     text-align: center;
     color: #DCE0D9;
 }
 
-.Who {
+.HomeHeading {
     border-bottom: solid #66C8CA 5px;
     padding-top: 16px;
     padding-bottom: 6px;
