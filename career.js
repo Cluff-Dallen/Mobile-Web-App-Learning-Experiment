@@ -9,44 +9,10 @@ function f1() {
         aboutyourself: String(document.getElementById("aboutyourself").value)
     };
 
-    /*document.getElementById("submittedText").innerHTML = "Your First Name: " + application.firstname +
-        "<br> Your Last Name: " + application.lastname +
-        "<br> Your Age: " + application.age +
-        "<br> Your Birth Year: " + application.byear +
-        "<br> Your Degree is in: " + application.degree +
-        "<br> Applying for the position of: " + application.position +
-        "<br> About yourself: " + application.aboutyourself;*/
-
-    /*var applicationForm = {
-        'firstname': application.firstname,
-        'lastname': application.lastname,
-        'age': application.age,
-        'byear': application.byear,
-        'degree': application.degree,
-        'position': application.position,
-        'aboutyourself': application.aboutyourself
-    };*/
-
-
-    /* localStorage.setItem('firstname', application.firstname);
-     localStorage.setItem('lastname', application.lastname);
-     localStorage.setItem('age', application.age);
-     localStorage.setItem('byear', application.byear);
-     localStorage.setItem('degree', application.degree);
-     localStorage.setItem('position', application.position);
-     localStorage.setItem('aboutyourself', application.aboutyourself);*/
-
-
-
 
 
     if (application.firstname != "" && application.lastname != "" && application.age != "" && application.byear != "" && application.degree != "" && application.position != "" && application.aboutyourself != "") {
-        /*
-         localStorage.setItem('applicationForm', JSON.stringify(applicationForm));
 
-         var retrievedData = localStorage.getItem('applicationForm');
-
-         var applicationInfo = JSON.parse(retrievedData)*/
 
         localStorage.setItem('firstname', application.firstname);
         localStorage.setItem('lastname', application.lastname);
