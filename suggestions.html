@@ -15,7 +15,7 @@
             <a id="career" href="career.html">Join Us</a>
             <a id="prices" href="prices.html">Crypto Prices</a>
             <a id="suggestions" href="suggestions.html">Help Us Improve</a>
-            <a id="unknown" href="unknown.html">Unknown</a></div>
+        </div>
         <a href="javascript:void(0);" class="icon" onclick="openMenu()">
             <img id="menuIcon" src="menu.png" alt="menu icon" width="20px" height="20px">
         </a>
@@ -45,10 +45,10 @@
     <label for="addSuggestionBox">To request a feature to be added by our mobile web app development team, enter in the desired feature below and it will instantly be added to our requested feature list:</label>
     <br>
     <br>
-    <input id="suggest" name="addSuggestionBox" type="text" size="50%">
+    <input id="suggest" ontouchstart="f7()" name="addSuggestionBox" type="text" size="50%">
     <br>
     <br>
-    <button onclick="f1()">Submit Suggestion</button> <button onclick="f2()">Remove Suggestion</button> <button onclick="f3()">Replace Suggestion</button>
+    <button ontouchend="f4()" id="submitSuggest" onclick="f1()">Submit Suggestion</button> <button ontouchend="f5()" id="removeSuggest" onclick="f2()">Remove Suggestion</button> <button ontouchend="f6()" id="replaceSuggest" onclick="f3()">Replace Suggestion</button>
 
     <script>
         function openMenu() {
